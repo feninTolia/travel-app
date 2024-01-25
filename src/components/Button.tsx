@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import React, { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes } from 'react';
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
   icon?: string;
-  variant: 'btn_dark_green';
+  variant: 'btn_dark_green' | 'btn_green' | 'btn_white_text';
 }
 
 const Button = ({ title, icon, variant, ...props }: IButtonProps) => {
